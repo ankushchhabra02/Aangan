@@ -4,6 +4,7 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
 import "./global.css";
+import GlobalProvider from "@/lib/global-provider";
 // import GlobalProvider from "@/lib/global-provider";
 
 export default function RootLayout() {
@@ -25,5 +26,9 @@ export default function RootLayout() {
   if (!fontsLoaded) {
     return null;
   }
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <GlobalProvider>
+      <Stack screenOptions={{ headerShown: false }} />;
+    </GlobalProvider>
+  );
 }
