@@ -10,11 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="font-bold color-red-700 my-10">hello</Text>
-      <Link href="/sign-in">Sign In</Link>
-      <Link href="/explore">Explore</Link>
-      <Link href="/profile">Profile</Link>
-      <Link href="/properties/1">Property</Link>
+      <Text className="font-bold ">Welcome to Aangan</Text>
     </View>
   );
 }
