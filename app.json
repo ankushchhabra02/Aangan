@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.xanny.aangan",
       "adaptiveIcon": {
         "foregroundImage": "assets/images/icon.png",
         "backgroundColor": "#ffffff"
@@ -49,6 +50,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "74ee6e49-4311-47bb-8d37-3a6417c0897b"
+      }
     }
   }
 }
