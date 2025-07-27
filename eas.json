@@ -9,10 +9,28 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_APPWRITE_PROJECT_ID": "680f6d8c002d07a3040e",
+        "EXPO_PUBLIC_APPWRITE_ENDPOINT": "https://fra.cloud.appwrite.io/v1",
+        "EXPO_PUBLIC_APPWRITE_DATABASE_ID": "683c74900034a4a36e15",
+        "EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID": "683c75fe00226030da4d",
+        "EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID": "683c76b900228f14caf6",
+        "EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID": "683c7724000ebc583b76",
+        "EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID": "683c77b2002a6804c5e3"
+      }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_APPWRITE_PROJECT_ID": "680f6d8c002d07a3040e",
+        "EXPO_PUBLIC_APPWRITE_ENDPOINT": "https://fra.cloud.appwrite.io/v1",
+        "EXPO_PUBLIC_APPWRITE_DATABASE_ID": "683c74900034a4a36e15",
+        "EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID": "683c75fe00226030da4d",
+        "EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID": "683c76b900228f14caf6",
+        "EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID": "683c7724000ebc583b76",
+        "EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID": "683c77b2002a6804c5e3"
+      }
     }
   },
   "submit": {
