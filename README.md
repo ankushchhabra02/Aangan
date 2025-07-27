@@ -1,50 +1,107 @@
-# Welcome to your Expo app 👋
+<div align="center">
+  
+  <h3 align="center">Aangan – Your Ideal Real Estate App</h3>
+  <br />
+  <div>
+    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logo=react&color=20232A" alt="React Native" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logo=typescript&color=3178C6" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logo=expo&color=000020" alt="Expo" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logo=tailwindcss&color=06B6D4" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="Appwrite" />
+  </div>
+</div>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## <a name="introduction">🚀 Introduction</a>
 
-## Get started
+**Aangan** is a React Native real estate app built with **Expo**, **Appwrite**, **Tailwind CSS**, and **TypeScript**.  
+It allows users to browse, search, filter, and favorite properties — all wrapped in a modern, smooth mobile experience.
 
-1. Install dependencies
+Whether you're looking for houses, condos, villas, or duplexes, Aangan makes it easy and intuitive to explore. The project is built from scratch to showcase clean architecture, real-time data, and professional-level usability.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-   ```bash
-    npx expo start
-   ```
+| Layer             | Technologies Used                             |
+| ----------------- | --------------------------------------------- |
+| 🚀 Frontend       | React Native (Expo SDK), TypeScript, Tailwind |
+| 🧩 Backend        | Appwrite (database, auth, file storage)       |
+| 🛠️ Styling        | NativeWind (Tailwind for RN)                  |
+| 📱 Authentication | Google Auth via Appwrite                      |
+| 🔀 Data Fetching  | Custom hooks (`useAppwrite`)                  |
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## <a name="features">🔍 Features</a>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Google Authentication**: Secure user login with Appwrite integration
+- **Home Screen**: Displays featured and recommended properties
+- **Explore Screen**: Browse all property types, with filters
+- **Search Bar**: Real-time search across the listings
+- **Property Detail**: Gallery, description, price, agent, reviews
+- **Profile Screen**: User profile, my bookings, and security settings
+- **Favorites**: Save your favorite properties for easy access
+- **Notifications**: Appwrite real-time alerts for updates
+- **Loading & Error Handling**: Smooth UX with loader screens and alerts
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## <a name="quick-start">🛠️ Quick Start</a>
+
+**Requirements**
+
+- Node.js & npm/yarn
+- Expo CLI (`npm install -g expo-cli`)
+- Appwrite account (self-hosted or cloud instance)
+
+**Setup Steps**
 
 ```bash
-npm run reset-project
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/aangan-app.git
+cd aangan-app
+
+# Install dependencies
+npm install
+# or
+yarn
+
+# Create an .env file in the root:
+cat <<EOF > .env
+APPWRITE_ENDPOINT=https://appwrite.yourdomain/v1
+APPWRITE_PROJECT_ID=<your_project_id>
+APPWRITE_DATABASE_ID=<your_db_id>
+APPWRITE_COLLECTION_PROPERTY=<properties_coll>
+APPWRITE_COLLECTION_AGENT=<agents_coll>
+APPWRITE_COLLECTION_REVIEW=<reviews_coll>
+APPWRITE_COLLECTION_GALLERY=<galleries_coll>
+EOF
+
+# Run Expo
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## <a name="quick-start"> 🙏 Why This Project Stands Out</a>
 
-To learn more about developing your project with Expo, look at the following resources:
+- 📱 **Mobile-first UI** built with **React Native + Tailwind**
+- ♻️ **Clean separation** with reusable hooks and components
+- ⚡ **Real-time database**, authentication, and file handling via **Appwrite**
+- 🚀 **Easy to deploy**, easy to test, and easy to scale
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+##
 
-## Join the community
+## <a name="quick-start">📸 Demo Screenshots</a>
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<div style="display: flex; gap: 10px;">
+  <img src="assets\screenshots\Screenshot_2025-07-27-12-20-16-89_f73b71075b1de7323614b647fe394240.jpg" alt="Splash Screen" width="32%" />
+  <img src="assets\screenshots\Screenshot_2025-07-27-12-19-58-38_f73b71075b1de7323614b647fe394240.jpg" alt="Login Screen" width="32%" />
+  <img src="assets\screenshots\Screenshot_2025-07-27-12-19-45-02_f73b71075b1de7323614b647fe394240.jpg" alt="Home  <img src="./assets/screenshots/home.jpg" alt="Home Screen" width="32%" />
+  
+</div>
+<div style="display: flex; gap: 10px;">
+<img src="assets\screenshots\Screenshot_2025-07-27-12-19-48-16_f73b71075b1de7323614b647fe394240.jpg" alt="Search Screen" width="32%" />
+  <img src="assets\screenshots\Screenshot_2025-07-27-12-19-52-32_f73b71075b1de7323614b647fe394240.jpg" alt="Profile Screen" width="32%" />
+  
+</div>

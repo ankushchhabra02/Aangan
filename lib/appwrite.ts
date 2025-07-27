@@ -8,6 +8,7 @@ import {
 } from "react-native-appwrite";
 import * as Linking from "expo-linking";
 import { openAuthSessionAsync } from "expo-web-browser";
+import { makeRedirectUri } from "expo-auth-session";
 
 export const config = {
   platform: "com.xanny.aangan",
@@ -36,8 +37,10 @@ export const databases = new Databases(client);
 
 export async function login() {
   try {
-    const redirectUri = Linking.createURL("/");
-
+    const redirectUri = makeRedirectUri({
+      scheme: "aangan", // Replace with your app's scheme from app.json
+    });
+    // const redirectUri = Linking.createURL("/");
     const response = await account.createOAuth2Token(
       OAuthProvider.Google,
       redirectUri
