@@ -58,7 +58,7 @@ Whether you're looking for houses, condos, villas, or duplexes, Aangan makes it 
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/aangan-app.git
+git clone https://github.com/ankushchhabra02/Aangan.git
 cd aangan-app
 
 # Install dependencies
